@@ -29,13 +29,14 @@
   cursor: pointer;
 }
 
-body {
+/* body {
   background-color: #f0f0f7;
-}
+} */
 
 .card {
   width: 50%;
   margin: 0rem auto 3.2rem;
+  background-color: #f0f0f7;
 }
 
 .card h3 {

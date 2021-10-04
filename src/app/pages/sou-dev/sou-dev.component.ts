@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { Cidade } from "src/app/interfaces/cidade";
+import { Especialidade } from "src/app/interfaces/especialidade";
+import { Formacao } from "src/app/interfaces/formacao";
 // import { SnackBarService } from 'src/app/services/snack-bar.service';
 // import { ModalConfirmacaoComponent } from 'src/app/shared/modal-confirmacao/modal-confirmacao.component';
 // import { takeUntilDestroy } from 'src/assets/utils/take-until-destroy';

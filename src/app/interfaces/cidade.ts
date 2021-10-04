@@ -1,4 +1,4 @@
-interface Cidade {
+export interface Cidade {
   value: string;
   viewCidade: string;
 }

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-// import { Cidade } from "src/app/interfaces/cidade";
-
+import { Cidade } from "src/app/interfaces/cidade";
+import { Especialidade } from "src/app/interfaces/especialidade";
+import { Formacao } from "src/app/interfaces/formacao";
 @Component({
   selector: 'app-procuro-dev',
   templateUrl: './procuro-dev.component.html',
