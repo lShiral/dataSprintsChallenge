@@ -1,0 +1,89 @@
+#page-landing {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #dab3ff;
+}
+
+.logo-container img {
+  height: 10rem;
+}
+
+.dev-image {
+  width: 22rem;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.logo-container h2 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 4.6rem;
+  margin-top: 0.8rem;
+}
+
+.botao-procurar {
+  margin-right: 3rem;
+  background-color: #FFE4E1;
+}
+
+.botao-procurar:hover {
+  background-color: #FFC0CB;
+}
+
+.botao-devop {
+  background-color: #ADFF2F;
+}
+
+.botao-devop:hover {
+
+  background-color: #7CFC00;
+}
+
+
+.buttons-container a:first-child {
+  margin-right: 1.6rem;
+}
+
+@media (min-width: 1100px) {
+  #page-landing-content {
+    max-width: 1100px;
+
+    display: grid;
+    grid-template-rows: 350px 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+      'logo dev dev'
+      'buttons buttons total'
+    ;
+  }
+
+  .logo-container {
+    grid-area: logo;
+    align-self: center;
+    text-align: left;
+    margin: 0;
+  }
+
+  .logo-container h2 {
+    text-align: initial;
+    font-size: 3.6rem;
+  }
+
+  .logo-container img {
+    height: 100%;
+  }
+
+  .buttons-container {
+    grid-area: buttons;
+    justify-content: flex-start;
+  }
+
+}

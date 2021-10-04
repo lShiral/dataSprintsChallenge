@@ -1,0 +1,99 @@
+<header class="page-header">
+  <div class="top-bar-container">
+   <label (click)="voltar()" class="seta-voltar">
+   <img src="assets/images/seta-voltar.svg" alt="Voltar" />
+   </label>
+
+    <div id="page-teacher-form" class="header-content">
+      <h1>Aqui você encontra Devs!</h1>
+      <h4>Estes são os profissionais disponíveis</h4>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <div class="filtro">
+      <!-- <mat-card> -->
+    <div class="selects">
+      <form>
+
+      <mat-form-field appearance="fill"  class="select-espec">
+      <mat-label>Especialidade</mat-label>
+      <mat-select [(ngModel)]="especSelecionada" name="especialidade">
+        <mat-option *ngFor="let especialidade of especialidades" [value]="especialidade.value">
+          {{especialidade.viewEspec}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill"  class="select-formacao">
+      <mat-label>Formação Acadêmica</mat-label>
+      <mat-select [(ngModel)]="formacaoSelecionada" name="formacao">
+        <mat-option *ngFor="let formacao of formacoes" [value]="formacao.value">
+          {{formacao.viewFormacao}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="select-cidade">
+      <mat-label>Cidade</mat-label>
+      <mat-select [(ngModel)]="cidadeSelecionada" name="cidade" >
+        <mat-option *ngFor="let cidade of cidades" [value]="cidade.value">
+          {{cidade.viewCidade}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+  </form>
+  </div>
+  <div class="buttons-container">
+    <button
+      mat-raised-button
+      class="botao-buscar"
+    >
+      Buscar
+    </button>
+    </div>
+  </div>
+
+<div class="card">
+  <mat-grid-list cols="2" rowHeight="2:2">
+  <mat-card class="dev-card">
+    <mat-card-header>
+      <div mat-card-avatar class="card-imagem-dev"></div>
+      <mat-card-title>Jéssica Brito</mat-card-title>
+      <mat-card-subtitle>Angular , Belo Horizonte</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        Iniciei minha carreira como estagiária na empresa Framework em 2020 e em 2021 fui contratada
+        como Dev Júnior. Na empresa, trabalho no projeto Unidas Seminovos.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary">CONTATO</button>
+      <button mat-raised-button color="accent">GIT HUB</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="dev-card">
+    <mat-card-header>
+      <div mat-card-avatar class="card-imagem-dev"></div>
+      <mat-card-title>Jéssica Brito</mat-card-title>
+      <mat-card-subtitle>Angular , Belo Horizonte</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        Iniciei minha carreira como estagiária na empresa Framework em 2020 e em 2021 fui contratada
+        como Dev Júnior. Na empresa, trabalho no projeto Unidas Seminovos.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary">CONTATO</button>
+      <button mat-raised-button color="accent">GIT HUB</button>
+    </mat-card-actions>
+  </mat-card>
+</mat-grid-list>
+</div>
+
+</body>

@@ -1,0 +1,71 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #a94dff;
+}
+
+.page-header .top-bar-container {
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  color: #f2f2f2;
+  padding: 1.6rem 0;
+}
+
+.page-header .header-content {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  margin: 3.2rem auto;
+}
+
+.page-header .header-content h4 {
+  color: #e6e6e6;
+  width: 21rem;
+}
+
+.seta-voltar {
+  cursor: pointer;
+}
+
+body {
+  background-color: #f0f0f7;
+}
+
+.card {
+  width: 50%;
+  margin: 0rem auto 3.2rem;
+}
+
+.card h3 {
+  padding: 10px;
+}
+
+.divider {
+ position: inherit !important;
+ margin-bottom: 10px;
+}
+
+.formulario .inputs{
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.formulario .selects {
+  display: grid;
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.botao-enviar {
+  background-color: #ADFF2F;
+}
+
+.botao-enviar:hover {
+  background-color: #7CFC00;
+}
+
+

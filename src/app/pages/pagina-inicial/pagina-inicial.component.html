@@ -1,0 +1,29 @@
+<div id="page-landing">
+  <div id="page-landing-content" class="container">
+    <div class="logo-container">
+      <img src="../assets/images/devv.png" alt="Proffy" />
+      <h2>Plataforma para encontrar Devs.</h2>
+    </div>
+    <img
+      src="../assets/images/png-dev2.svg"
+      alt="Plataforma de estudos"
+      class="dev-image"
+    />
+
+    <div class="buttons-container">
+      <button
+        mat-raised-button
+        class="botao-procurar"
+        [routerLink]="['/procuro-dev']"
+      >
+        Procurar Dev
+        <mat-icon> search </mat-icon>
+      </button>
+
+      <button mat-raised-button class="botao-devop" [routerLink]="['/sou-dev']">
+        Sou um Dev
+        <mat-icon> laptop </mat-icon>
+      </button>
+    </div>
+  </div>
+</div>

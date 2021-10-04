@@ -1,0 +1,80 @@
+<header class="page-header">
+  <div class="top-bar-container">
+   <label (click)="voltar()" class="seta-voltar">
+   <img src="assets/images/seta-voltar.svg" alt="Voltar" />
+   </label>
+
+    <div id="page-teacher-form" class="header-content">
+      <h1>Aqui você se cadastra como Dev!</h1>
+      <h4>O primeiro passo é preencher este formulário de inscrição</h4>
+      </div>
+    </div>
+  </header>
+
+<body>
+
+  <mat-card class="card">
+    <h3>Seus Dados</h3>
+    <mat-divider class="divider"></mat-divider>
+    <form class="formulario">
+    <mat-form-field class="inputs" appearance="fill">
+      <mat-label>Nome</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+    <mat-form-field class="inputs" appearance="fill">
+      <mat-label>Contato</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+    <mat-form-field class="inputs" appearance="fill">
+      <mat-label>Link Github</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+    <form class="selects">
+      <mat-form-field appearance="fill"  class="select-espec">
+      <mat-label>Especialidade</mat-label>
+      <mat-select [(ngModel)]="especSelecionada" name="especialidade">
+        <mat-option *ngFor="let especialidade of especialidades" [value]="especialidade.value">
+          {{especialidade.viewEspec}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill"  class="select-formacao">
+      <mat-label>Formação Acadêmica</mat-label>
+      <mat-select [(ngModel)]="formacaoSelecionada" name="formacao">
+        <mat-option *ngFor="let formacao of formacoes" [value]="formacao.value">
+          {{formacao.viewFormacao}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="select-cidade">
+      <mat-label>Cidade</mat-label>
+      <mat-select [(ngModel)]="cidadeSelecionada" name="cidade" >
+        <mat-option *ngFor="let cidade of cidades" [value]="cidade.value">
+          {{cidade.viewCidade}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+
+    <mat-form-field class="inputs" appearance="fill">
+      <mat-label>Comentário</mat-label>
+      <textarea matInput placeholder="Diga mais sobre você e suas habilidades"></textarea>
+    </mat-form-field>
+    </form>
+
+    <div class="buttons-container">
+      <button
+        mat-raised-button
+        class="botao-enviar"
+      >
+        Enviar
+      </button>
+      </div>
+</mat-card>
+  </body>
+
