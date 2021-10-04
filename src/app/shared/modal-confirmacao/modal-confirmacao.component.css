@@ -1,0 +1,55 @@
+::ng-deep .mat-dialog-container {
+  padding: 0 !important;
+  width: 50vh !important;
+  height: 40vh !important;
+  text-align: center;
+  margin: 0px !important;
+}
+
+.titulo {
+  background-color: red;
+  font-size: 20px;
+  margin: 0px;
+  height: 60px;
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+}
+
+.titulo-info {
+  font-size: 20px;
+}
+
+.botoes {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 2px;
+}
+
+.btn-sim {
+  background-color: #4CAF50;
+  width: 15vh;
+  height: 5vh;
+  color: black;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-sim:hover {
+ background-color: #ADFF2F;
+}
+
+.btn-nao {
+  background-color: #DC143C;
+  width: 15vh;
+  height: 5vh;
+  color: black;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-nao:hover {
+  background-color: #FF0000;
+ }

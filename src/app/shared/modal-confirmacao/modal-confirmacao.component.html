@@ -1,21 +1,20 @@
 <div class="container-fluid">
   <div class="row">
 
-    <div class="col-12 bg-red p-2 text-white text-center mb-2">
-      <h3>Atenção</h3>
+    <div class="titulo">
+      <p>Atenção</p>
     </div>
 
-    <div class="col-12 text-center align-items-center">
-      <h5 class="titulo-info" [innerHTML]="titulo"></h5>
+    <div class="titulo-info">
+      <h5 [innerHTML]="titulo"></h5>
       <div *ngIf="subtitulo">
         <small>{{subtitulo}}</small>
       </div>
     </div>
 
-    <div class="col-12 text-center mb-3">
-      <button class="btn btn-info ml-1 bt-info" (click)="close(true)">{{confirmar}}</button>
-      <button class="btn btn-danger ml-3 bt-info" (click)="close(false)">{{naoConfirmar}}</button>
-      <button class="btn btn-info ml-3 bt-info" *ngIf="data.confirmar" (click)="close(null)">Cancelar</button>
+    <div class="botoes">
+      <button mat-raised-button (click)="close(true)" class="btn-sim">{{confirmar}}</button>
+      <button mat-raised-button (click)="close(false)" class="btn-nao">{{naoConfirmar}}</button>
     </div>
   </div>
 </div>
